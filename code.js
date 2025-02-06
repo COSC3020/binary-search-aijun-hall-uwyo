@@ -1,6 +1,6 @@
 function binarySearch(list, element) {
     // Assuming list is already sorted because of >given a sorted list from README
-    let starting_index = 1;
+    let starting_index = 0;
     let ending_index = list.length - 1;
 
     while (starting_index <= ending_index) {
