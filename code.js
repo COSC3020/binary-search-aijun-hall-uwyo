@@ -8,7 +8,7 @@ function binarySearch(list, element) {
         middle_index = Math.floor(middle_index)
 
         if (list[middle_index] === element) {
-            return true;
+            return middle_index;
         }
 
         if (list[middle_index] < element) {
