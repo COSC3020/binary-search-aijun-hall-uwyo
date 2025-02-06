@@ -1,5 +1,6 @@
 function binarySearch(list, element) {
     // Assuming list is already sorted because of >given a sorted list from README
+
     let starting_index = 0;
     let ending_index = list.length - 1;
 
@@ -9,6 +10,15 @@ function binarySearch(list, element) {
 
         if (list[middle_index] === element) {
             return middle_index;
+
+    let starting_index = 1;
+    let ending_index = list.length;
+
+    while (starting_index <= ending_index) {
+        let middle_index = (starting_index + ending_index) / 2;
+
+        if (list[middle_index] == element) {
+            return true;
         }
 
         if (list[middle_index] < element) {
